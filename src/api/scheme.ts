@@ -101,6 +101,8 @@ export interface TaskBaseScheme {
 
 export interface TaskScheme extends TaskBaseScheme {
   id: number
+  patient_id: number
+  expertise: string | null
   created_at: string
   complete: boolean
 }
