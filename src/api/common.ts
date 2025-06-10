@@ -180,6 +180,8 @@ export const getAPIResourceList = async <Scheme> (
     results: resourceList,
     count
   } = await apiGET<NamedAPIResourceList>(url, session)
+  
+  console.log('Fetching from URL:', url);
 
   return {
     items: await Promise.all(
